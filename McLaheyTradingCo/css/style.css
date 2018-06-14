@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i');
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Cormorant:300,400,500');
+
+/* colors */
+:root {
+    --blue-grey: #34454F;
+    --tan: #DBA884;
+    --off-white: #F0F0F0;
+    --black: #1c1c1c;
+    --dark-grey: #3B3B3B;
+}
+
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* nav styles */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--black);
+    display: flex;
+    
+}
+
+nav a {
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* section styles */
+.large {
+    height: 100%;
+    width: 100%;
+    
+}
+.little {
+    height: 30%;
+    
+}
+
+/* home styles */
+
+.home {
+    display: flex;
+    margin: 0;
+    background-image: url('../images/homeBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home div {
+    margin: auto;
+    color: white;
+    height: 100px;
+    background-color: rgba(28,28,28, 0.8);
+    display: flex;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.home div h1 {
+    margin: auto;
+    font-family: 'Eczar', serif;
+}
+
+/* sale styles */
+
+.sale {
+    background-color: #F7F5F8;
+    height: 20%;
+    display: flex;
+}
+
+.sale div {
+    margin: auto;
+    font-size: 35px;
+}
+
+.sale div span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+/* Products styles */
+
+.products {
+    background-image: url('../images/productsBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.grid-container .item {
+    width: 100%;
+    background-color: rgba(247,245,248, 0.5);
+    height: 50%;
+    display: flex;
+    margin: auto;
+    transition: 0.3s;
+}
+.grid-container .item:hover {
+    background-color: rgba(247,245,248, 0.8);
+}
+.grid-container .item img:hover {
+    max-height: 75%;
+}
+
+.grid-container .item img {
+    max-height: 70%;
+    margin: auto;
+}
+
+.grid-container .item .item-info {
+    padding: 20px 20px 0 0;
+}
+
+.grid-container .item .item-info h4 {
+    margin-bottom: 0px;
+}
+
+/* logo section styles */
+
+.logos {
+    background-color: #F7F5F8;
+}
+
+.grid-container .logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.grid-container .logo img {
+    max-height: 100%;
+    max-width: 70%;
+    margin: auto;
+}
+
+/* categories styles */
+.backwoods {
+    background-image: url('../images/backwoodsCollection.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Eczar', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.backwoods h2 {
+    margin: auto;
+}
+
+.running {
+    background-image: url('../images/runningGear.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Eczar', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.running h2 {
+    margin: auto;
+}
+
+
+.clearence {
+    background-image: url('../images/clearenceItems.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Eczar', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.clearence h2 {
+    margin: auto;
+}
+
+.tents {
+    background-image: url('../images/backpackingTents.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Eczar', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.tents h2 {
+    margin: auto;
+}
+
+.backwoods:hover, .running:hover, .clearence:hover, .tents:hover {
+    opacity: 0.8;
+}
+
+/* about styles */
+.about {
+    display: flex;
+}
+.aboutText {
+    height: 100%;
+    max-width: 30%;
+    background-color: #21475B;
+    font-family: 'Cormorant', serif;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    float: left;
+}
+
+.aboutHeader {
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.aboutBody {
+    margin: auto;
+    width: 50%;
+    
+}
+
+.aboutText h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin: auto;
+
+}
+.aboutText p {
+    margin: auto;
+}
+
+/* contact styles */
+
+.contact {
+    background-image: url('../images/leaves-pattern.png');
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    min-height: 50%;
+    background-color: rgba(247,245,248,0.7);
+    border-radius: 10px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.container h1 {
+    padding-top: 30px;
+}
+
+
+
+/* footer styles */
+
+footer {
+    display: flex; 
+    min-height: 300px;
+}
+
+footer .left-column {
+    background-color: var(--dark-grey);
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+footer .left-column div {
+    margin: auto;
+    font-family: 'Eczar', serif;
+    
+}
+footer .left-column h3 {
+    color: var(--off-white);
+    font-family: 'Eczar', serif;
+}
+footer .left-column div a {
+    text-decoration: none;
+    color: var(--off-white);
+}
+footer .left-column div a:hover {
+    text-decoration: underline;
+    color: var(--off-white);
+}
+footer .middle-column {
+    background-color: var(--dark-grey);
+    width: 100%;
+    display: flex;
+}
+footer .middle-column div {
+    margin: auto;
+    text-align: center;
+    font-family: 'Eczar', serif;
+    color: var(--off-white);
+}
+
+footer .middle-column div input {
+    border-radius: 5px;
+}
+footer .right-column {
+    background-color: var(--dark-grey);
+    width: 100%;
+    display: flex;
+}
+footer .right-column div {
+    margin: auto;
+    text-align: center;
+    font-family: 'Eczar', serif;
+    color: var(--off-white);
+}
+footer .right-column div i:hover {
+    opacity: 0.5;
+}
